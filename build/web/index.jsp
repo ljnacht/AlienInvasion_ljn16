@@ -12,7 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Alien Invasion - Login</title>
     </head>
-    <%  
+    <% 
         String username = "";
         String password = "";
         User user;
@@ -31,9 +31,11 @@
             }
            //check for blank and login info
             if(!username.equals("") && !password.equals("")){
-                user = new User(username,password);
-                if(user.ifLoggedIn()){
-                    out.println("<script>alert('You are logged in.');</script>");
+                //user = new User(username,password);
+                
+                if(false){
+                    out.println("<script>window.location='game.jsp';</script>");
+                  
                 }else{
                     out.println("<script>alert('Your login information is invalid.');</script>");
                 }
@@ -41,6 +43,7 @@
                 out.println("<script>alert('Fill in username and password');</script>");
             }
         }
+  
      %>
     <body>
         <form id="frm-login" action="index.jsp" method="post">
@@ -49,8 +52,10 @@
             <br />
             <label for="txtPassword"> Password: &nbsp; </label>
             <input type="password" id ="txtPassword" name="txtPassword" value=""></input>
-            <br />
-            <input type="submit" id="btnSubmit" name="btnSubmit" value="Login"></input>
+            <br /><br />&nbsp;
+            <input type="submit" id="btnSubmit" name="btnSubmit" value="Login"></input>&nbsp;
+            <input type="button" id="btnRegister" name="btnRegister" value="Register"
+                   onclick="window.location='register.jsp';return true;"></input>
         </form>
     </body>
 </html>
