@@ -15,7 +15,7 @@ public class ScoreTracker {
 	private int highestScore;
 	private DbUtilities db;
 
-	public ScoreTracker(User u){		
+	public ScoreTracker(User u){
 		gameID = UUID.randomUUID().toString();
 		user = u;
 		currentScore = 0;

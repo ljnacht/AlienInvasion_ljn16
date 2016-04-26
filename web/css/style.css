@@ -1,0 +1,40 @@
+body{
+    background-color: #333;
+    padding: 0px 10px;
+}
+
+#ship{
+    
+  position: absolute;
+
+    width: 60px;
+    height: 110px;
+    
+}
+
+#tblAliens{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 400px;
+    height: 112px;
+}
+
+.alien{
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+#bullet{
+    position: absolute;
+    width: 3px;
+    height: 5px;
+    background-color: white;
+}
+
+td{
+    width: 32px;
+    height: 32px;
+    padding: 0px;
+}

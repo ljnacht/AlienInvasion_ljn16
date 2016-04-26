@@ -1,0 +1,19 @@
+{
+    "leaders" : [
+        { 
+            "firstName" : "Lily",
+            "lastName" : "Nacht",
+            "highestScore" : 11
+        },
+        {
+            "firstName" : "Jane",
+            "lastName" : "Doe",
+            "highestScore" : 5
+        },
+        {
+            "firstName" : "Ali",
+            "lastName" : "L'Esperance",
+            "highestScore" : 50
+        }
+    ]
+}
